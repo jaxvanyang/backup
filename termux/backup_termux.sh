@@ -1,4 +1,3 @@
-# Note: If you have obtained root, you probably use root user to run this script.
 cd /data/data/com.termux/files
 log_file=/sdcard/backup_termux.log
 
