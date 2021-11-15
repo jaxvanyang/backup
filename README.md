@@ -42,19 +42,15 @@
 
 ## 2. TODOs
 
-~~[ ](use more specific regex to finish rename-to_.sh)~~
+- [x] fix ohmyzsh plugin install error
 
-[x](fix ohmyzsh plugin install error)
+- [ ] avoid relative path error for shell
 
-[ ](avoid relative path error for shell)
+- [x] check status before running scripts
 
-[x](check status before running scripts)
+- [ ] 整合 [Note for lab-pc](backups/lab-pc/note.md)
 
-~~[ ](add mc server firewall config script)~~
-
-[ ](整合 [Note for lab-pc](backups/lab-pc/note.md))
-
-[ ](添加备份脚本（在 [backups](backups/) 中转)
+- [ ] 添加备份脚本（在 [backups](backups/) 中转）
 
 ## 3. Reference
 
