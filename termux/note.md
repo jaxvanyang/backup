@@ -48,6 +48,28 @@
 
 ## 2. 备份
 
+### 2.0 配置文件
+
+- VIM
+
+	- [.vimrc](../configs/vim/.vimrc)
+
+- ZSH
+
+	> Usaully, using [oh-my-zsh](https://ohmyz.sh/) to configure ZSH is enough.
+
+	- [.zshrc](.zshrc)
+
+### 2.1 备份 Termux
+
+> 如果你在 Termux 里获取了 root，你就需要使用 root 用户来执行备份和恢复脚本。
+
+以下脚本把备份路径写死了，如果你需要保存或恢复多个备份，请手动重命名。
+
+1. [备份脚本](./backup_termux.sh)：将 Termux 应用文件夹 `/data/data/com.termux/files/` 下的 `home` 和 `usr` 文件夹打包到 SD 卡根目录的 `/sdcard/termux_backup.tar.gz`，还会输出备份日志到 `/sdcard/backup_termux.log`。
+
+2. [还原脚本](./restore_termux.sh)：将 `/sdcard/termux_backup.tar.gz` 解压缩到 `/data/data/com.termux/files/` 目录下。
+
 ## Reference
 
 [Termux 高级终端安装使用配置教程](https://www.sqlsec.com/2018/05/termux.html)

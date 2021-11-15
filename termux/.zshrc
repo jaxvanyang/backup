@@ -1,14 +1,11 @@
 # My run commands
 alias cls=clear
-alias vi=vim
-alias grep='grep --color=auto'
-alias ll='ls -l'
-alias tcs=termux-clipboard-set
-alias tcg=termux-clipboard-get
+alias py=python
 
 # My environmental variable
 export NODE_PATH=$PREFIX/lib/node_modules/
 export PATH=$HOME/repos/lang-study/shell:$PATH
+export PATH=$HOME/.local/bin:$PATH
 
 ZSH_THEME="fox"
 # If you come from bash you might have to change your $PATH.
@@ -82,7 +79,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions autojump)
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting autojump)
 
 source $ZSH/oh-my-zsh.sh
 
