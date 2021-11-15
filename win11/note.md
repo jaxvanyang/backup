@@ -74,6 +74,14 @@ Git: 参考 [.gitconfig](../examples/git/.gitconfig) 手动配置
     Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
     ```
 
+### 3.4 OpenSSH
+
+生成密钥：
+
+```powershell
+ssh-keygen -t ed25519 -C "your_email@example.com"
+```
+
 ## 4. 备份
 
 > 加入必要的恢复备份说明

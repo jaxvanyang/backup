@@ -14,11 +14,9 @@
 
 ## TOC
 
-[1. 结构](#1-结构)
+- [1. 结构](#1-结构)
 
-[2. TODOs](#2-todos)
-
-[3. Reference](#3-reference)
+- [2. TODOs](#2-todos)
 
 ## 1. 结构
 
@@ -51,7 +49,3 @@
 - [ ] 整合 [Note for lab-pc](backups/lab-pc/note.md)
 
 - [ ] 添加备份脚本（在 [backups](backups/) 中转）
-
-## 3. Reference
-
-[Termux 高级终端安装使用配置教程](https://www.sqlsec.com/2018/05/termux.html)
