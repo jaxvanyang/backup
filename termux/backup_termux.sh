@@ -1,9 +1,9 @@
 # Note: If you have obtained root, you probably use root user to run this script.
 cd /data/data/com.termux/files
-log_file=/sdcard/termux-backup.log
+log_file=/sdcard/backup_termux.log
 
 # Relative path is required!
-tar zcvf /sdcard/termux-backup.tar.gz home usr
+tar zcvf /sdcard/termux_backup.tar.gz home usr
 flag=$?
 log_date=`date`
 if [ $flag ]; then

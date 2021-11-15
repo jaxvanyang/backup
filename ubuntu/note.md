@@ -332,9 +332,9 @@ ZSH: refer to [./.zshrc](./.zshrc) & [examples/zsh/.zshrc](../examples/zsh/.zshr
 
 - Install basic tools: [install_basic_tools.sh](./install_basic_tools.sh)
 
-- Install Oh My ZSH: [install_oh_my_zsh.sh](./install_oh_my_zsh.sh)
+- Install Oh My ZSH: [install_ohmyzsh.sh](./install_ohmyzsh.sh)
 
-- Install Oh My ZSH plugins: [install_oh_my_zsh_plugins.sh](./install_oh_my_zsh_plugins.sh)
+- Install Oh My ZSH plugins: [install_ohmyzsh_plugins.sh](./install_ohmyzsh_plugins.sh)
 
 	You should enable plugins in [~/.zshrc](~/.zshrc)
 
