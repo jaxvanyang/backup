@@ -1,0 +1,9 @@
+[user]
+	name = you_name
+	email = you_email@example.com
+[push]
+	default = simple
+[http "https://github.com"]
+	proxy = http://127.0.0.1:7890
+[core]
+	quotepath = false

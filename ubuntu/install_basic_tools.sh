@@ -1,0 +1,1 @@
+sudo apt install git vim-nox ssh zsh wget curl tree htop
