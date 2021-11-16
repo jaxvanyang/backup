@@ -1,7 +1,7 @@
 plugins=(zsh-autosuggestions zsh-syntax-highlighting)
 
 install_plugin() {
-    if [ -e ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/$1 ]; then
+    if [ -d ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/$1 ]; then
         echo "Plugin $1 already installed"
     else
         echo "Installing plugin $1"
@@ -17,7 +17,7 @@ done
 
 install_from_repo() {
 	echo "Installing plugin $1..."
-	git clone $2 ~/repos/$1 && cd ~/repos/$1 && $3 && echo "Plugin $1 installed successfully" || echo "Plugin $1 installation failed"
+	git clone $2 ~/repos/$1 && ~/repos/$3 && echo "Plugin $1 installed successfully" || echo "Plugin $1 installation failed"
 }
 
 install_from_repo "autojump" "https://github.com/wting/autojump.git" "./install.py"

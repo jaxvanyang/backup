@@ -8,19 +8,27 @@
 
 ## 1. 配置
 
-> 大部分脚本都需要使用 `bash` 执行。
+> 所有的脚本都必须在所在文件夹下执行，大部分脚本需要使用 `bash` 执行。
 
-### 1.0 更换为国内源
+### 1.0 快速配置
+
+> TL;DR
+
+- [generate_quick_setup.sh](./generater_quick_setup.sh)
+
+- [quick_setup.sh](./quick_setup.sh)
+
+### 1.1 更换为国内源
 
 > 该脚本是直接从国光的教程上抄的。
 
 [replace_package_source.sh](./replace_package_source.sh)
 
-### 1.1 安装基本工具
+### 1.2 安装基本工具
 
 [install_basic_tools.sh](./install_basic_tools.sh)
 
-### 1.2 安装 `Oh My ZSH for Termux`
+### 1.3 安装 `Oh My ZSH for Termux`
 
 1. 安装 `ZSH` 和 `Oh My ZSH for Termux`
 
@@ -53,6 +61,8 @@
 - VIM
 
 	- [.vimrc](../configs/vim/.vimrc)
+
+	- [还原 VIM 配置脚本](./restore_vim.sh)
 
 - ZSH
 

@@ -1,11 +1,11 @@
 # My run commands
 alias cls=clear
-alias py=python
+alias tcs=termux-clipboard-set
+alias tcg=termux-clipboard-get
 
 # My environmental variable
-export NODE_PATH=$PREFIX/lib/node_modules/
-export PATH=$HOME/repos/lang-study/shell:$PATH
 export PATH=$HOME/.local/bin:$PATH
+export NODE_PATH=$PREFIX/lib/node_modules/
 
 ZSH_THEME="fox"
 # If you come from bash you might have to change your $PATH.
