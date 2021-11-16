@@ -6,7 +6,7 @@ echo Setup ./install_basic_tools.sh...
 sudo apt install git vim-nox ssh zsh wget curl tree htop
 if [ $? ]; then echo "Succeed"; else echo "Failed" && exit 1; fi
 
-echo Setup ./install_oh_my_zsh.sh...
+echo Setup ./install_ohmyzsh.sh...
 if [ -d ${ZSH:-~/.oh-my-zsh} ]; then
     echo "oh-my-zsh is already installed"
 else
@@ -19,7 +19,7 @@ else
 fi
 if [ $? ]; then echo "Succeed"; else echo "Failed" && exit 1; fi
 
-echo Setup ./install_oh_my_zsh_plugins.sh...
+echo Setup ./install_ohmyzsh_plugins.sh...
 plugins=(zsh-autosuggestions zsh-syntax-highlighting)
 apt_plugins=(autojump)
 

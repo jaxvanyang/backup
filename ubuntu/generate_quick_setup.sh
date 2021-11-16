@@ -2,8 +2,8 @@
 
 setup_scripts=(
     ./install_basic_tools.sh
-    ./install_oh_my_zsh.sh
-    ./install_oh_my_zsh_plugins.sh
+    ./install_ohmyzsh.sh
+    ./install_ohmyzsh_plugins.sh
     ./restore_vim.sh
 )
 
