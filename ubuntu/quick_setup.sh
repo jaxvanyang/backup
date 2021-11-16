@@ -24,7 +24,7 @@ plugins=(zsh-autosuggestions zsh-syntax-highlighting)
 apt_plugins=(autojump)
 
 install_plugin() {
-    if [ -e ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/$1 ]; then
+    if [ -d ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/$1 ]; then
         echo "Plugin $1 already installed"
     else
         echo "Installing plugin $1"
@@ -38,6 +38,7 @@ for plugin in ${plugins[@]}; do
 done
 
 sudo apt install ${apt_plugins[@]}
+
 if [ $? ]; then echo "Succeed"; else echo "Failed" && exit 1; fi
 
 echo Setup ./restore_vim.sh...
