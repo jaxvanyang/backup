@@ -10,6 +10,8 @@
 
 - [4. 备份](#3-备份)
 
+- [参考](#参考)
+
 ## 1. 配置系统
 
 ## 2. 安装开发工具
@@ -54,19 +56,27 @@
 
     - [.gitconfig](../examples/git/.gitconfig)
 
+- pip
+
+    修改了镜像源：
+    
+    - [pip.conf](../examples/pip/pip.conf)
+
 ### 3.2 恢复配置
 
-> 需要使用 [4.3 备份脚本](#4-3-备份脚本)先备份
+> 需要使用 [4.3 备份脚本](#4-3-备份脚本)先备份。
 
-Git: 参考 [.gitconfig](../examples/git/.gitconfig) 手动配置
+Git: 参考 [.gitconfig](../examples/git/.gitconfig) 手动配置。
+
+pip: 找到 `~/.pip/pip.conf` 文件，参考 [pip.conf](../examples/pip/pip.conf) 手动配置。
 
 ### 3.3 PowerShell
 
 - 设置执行策略为 `RemoteSigned` 以允许执行脚本：
 
-    > PowerShell 7 默认的执行策略是 `RemoteSigned`，无需此操作
+    > PowerShell 7 默认的执行策略是 `RemoteSigned`，无需此操作。
     >
-    > 建议不要使用 PowerShell 5.x，一堆 BUG
+    > 建议不要使用 PowerShell 5.x，一堆 BUG。
     
 
     ```powershell
@@ -82,13 +92,41 @@ Git: 参考 [.gitconfig](../examples/git/.gitconfig) 手动配置
 ssh-keygen -t ed25519 -C "your_email@example.com"
 ```
 
+### 3.5 WSL
+
+1. 安装 `pip`
+
+    - 检查是否安装 `pip`：
+
+        ```shell
+        python3 -m pip --version
+        ```
+
+    - 如果没安装，先尝试从标准库引导安装：
+
+        ```shell
+        python3 -m ensurepip --default-pip
+        ```
+
+    - 如果尝试失败就下载 <https://bootstrap.pypa.io/get-pip.py>，再安装到 `/usr/local/`：
+
+        ```shell
+        python3 get-pip.py --prefix=/usr/local/
+        ```
+
+    - 更新安装工具：
+
+        ```shell
+        python3 -m pip install --upgrade pip setuptools wheel
+        ```
+
 ## 4. 备份
 
-> 加入必要的恢复备份说明
+> 加入必要的恢复备份说明。
 
 ### 4.3 备份脚本
 
-> [3.2 恢复配置](#3-2-恢复配置)的基础
+> [3.2 恢复配置](#3-2-恢复配置)的基础。
 
 WSL:
 
@@ -121,3 +159,9 @@ wsl --export <distro_name> <backup_file_name>.tar
 # <install_localtion> 可以在任意盘
 wsl --import <distro_name> <install_location> <backup_file_name>.tar
 ```
+
+## 参考
+
+- <https://packaging.python.org/tutorials/installing-packages>
+
+- <https://developer.aliyun.com/mirror/pypi>
