@@ -1,2 +1,5 @@
 # backups
 win11/*.tar
+
+# VS Code configuration
+.vscode/
